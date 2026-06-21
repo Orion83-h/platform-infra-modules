@@ -91,7 +91,7 @@ Outputs: `cluster_security_group_id`, `bastion_security_group_id`, `node_securit
 |----------|------|---------|-------------|
 | `environment` | `string` | | Environment name |
 | `eks_cluster_name` | `string` | | EKS cluster name |
-| `kubernetes_version` | `string` | `"1.28"` | Kubernetes version |
+| `kubernetes_version` | `string` | `"1.34"` | Kubernetes version |
 | `subnet_ids` | `list(string)` | | Subnet IDs for the cluster |
 | `vpc_id` | `string` | | VPC ID |
 | `cluster_security_group_id` | `string` | | Cluster security group ID |
