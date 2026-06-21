@@ -10,11 +10,11 @@ A collection of reusable Terraform modules for provisioning and managing an EKS-
 | `sec_grp` | Security groups for EKS cluster, nodes, and bastion host |
 | `eks` | EKS cluster with managed node group, KMS encryption, and CloudWatch logging |
 | `bastion-host` | Bastion EC2 instance with EBS encryption and kubeconfig bootstrap |
-| `aws-load-balancer-controller` | AWS Load Balancer Controller via IRSA |
-| `ebs-csi` | EBS CSI driver via IRSA |
-| `cert-manager` | cert-manager via IRSA |
-| `karpenter` | Karpenter autoscaler via IRSA |
-| `velero` | Velero backup/restore with S3 and IRSA |
+| `aws-load-balancer-controller` | AWS Load Balancer Controller via EKS Pod Identity |
+| `ebs-csi` | EBS CSI driver with KMS encryption via EKS Pod Identity |
+| `cert-manager` | cert-manager with Route53 DNS-01 support via EKS Pod Identity |
+| `karpenter` | Karpenter autoscaler via EKS Pod Identity |
+| `velero` | Velero backup/restore with KMS-encrypted S3 via EKS Pod Identity |
 | `helm` | ArgoCD and kube-prometheus-stack Helm releases |
 | `rbac` | Kubernetes namespaces, roles, and IAM role bindings |
 
